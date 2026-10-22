@@ -11,6 +11,7 @@ const dialog = document.querySelector("#viewer");
 const viewerImg = document.querySelector("#viewer-image");
 const viewerName = document.querySelector("#viewer-name");
 const viewerCheck = document.querySelector("#viewer-check");
+const viewerRetouched = document.querySelector("#viewer-retouched");
 
 let filter = "all";
 let viewerIndex = 0;
@@ -66,6 +67,7 @@ function syncViewer() {
   viewerImg.alt = source.alt;
   viewerName.textContent = file;
   viewerCheck.checked = Boolean(boxFor(file)?.checked);
+  viewerRetouched.hidden = !file.endsWith("-Edit.jpg");
 }
 
 function openViewer(index) {
@@ -94,11 +96,22 @@ checks.forEach((box) => {
   });
 });
 
-document.querySelector("#gallery").addEventListener("click", (event) => {
-  const opener = event.target.closest("[data-open]");
+function openFromPortrait(target) {
+  const opener = target.closest("[data-open]");
   if (!opener) return;
   const article = opener.closest("[data-file]");
   openViewer(articles.indexOf(article));
+}
+
+document.querySelector("#gallery").addEventListener("dblclick", (event) => {
+  openFromPortrait(event.target);
+});
+
+document.querySelector("#gallery").addEventListener("keydown", (event) => {
+  if (event.key !== "Enter" && event.key !== " ") return;
+  if (!event.target.closest("[data-open]")) return;
+  event.preventDefault();
+  openFromPortrait(event.target);
 });
 
 filterButtons.forEach((button) => {

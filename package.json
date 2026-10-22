@@ -3,8 +3,9 @@
   "private": true,
   "description": "Headshot proof gallery for Kathryn, photographed by Harry Martin Photography on October 21, 2026.",
   "scripts": {
-    "build:css": "tailwindcss -i ./globals.css -o ./styles.css --minify",
-    "start": "node server.js"
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build:css": "tailwindcss -i ./globals.css -o ./styles.css --minify"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.16",
