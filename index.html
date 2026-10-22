@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kathryn — Headshots · Harry Martin Photography</title>
+    <meta
+      name="description"
+      content="Headshot proofs for Kathryn, photographed by Harry Martin Photography on October 21, 2026."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23223C50'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body class="min-h-screen bg-ivory text-charcoal antialiased">
+    <div class="h-2 bg-signature" aria-hidden="true"></div>
+
+    <header class="mx-auto max-w-[1680px] px-6 pt-10 pb-8 sm:px-10 lg:px-14 lg:pt-14">
+      <p class="text-[11px] font-medium uppercase tracking-[0.28em] text-muted">
+        Harry Martin Photography
+      </p>
+      <div class="mt-6 flex flex-col gap-8 border-b border-stone pb-8 lg:flex-row lg:items-end lg:justify-between">
+        <div>
+          <h1 class="font-display text-5xl leading-none tracking-tight text-signature sm:text-6xl lg:text-7xl">
+            Kathryn
+          </h1>
+          <p class="mt-4 text-[13px] font-medium uppercase tracking-[0.22em] text-signature">
+            Headshots · October 21, 2026
+          </p>
+        </div>
+        <p class="max-w-md text-base leading-relaxed text-charcoal">
+          Mark the portraits to keep. The filename sits beside each checkbox so the selection can be read at a glance.
+        </p>
+      </div>
+    </header>
+
+    <div class="sticky top-0 z-20 border-b border-stone bg-ivory/95 backdrop-blur-md">
+      <div class="mx-auto flex max-w-[1680px] flex-wrap items-center gap-x-6 gap-y-3 px-6 py-3.5 sm:px-10 lg:px-14">
+        <p class="text-base font-medium text-signature" aria-live="polite">
+          <span data-count>0</span> of <span data-total>0</span> selected
+        </p>
+        <div class="flex items-center gap-1" role="group" aria-label="Show portraits">
+          <button
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+            class="px-3 py-1.5 text-[13px] font-medium uppercase tracking-[0.16em] text-signature aria-pressed:bg-signature aria-pressed:text-white"
+          >
+            All
+          </button>
+          <button
+            type="button"
+            data-filter="selected"
+            aria-pressed="false"
+            class="px-3 py-1.5 text-[13px] font-medium uppercase tracking-[0.16em] text-signature aria-pressed:bg-signature aria-pressed:text-white"
+          >
+            Selected
+          </button>
+        </div>
+        <div class="ml-auto flex items-center gap-2">
+          <button
+            type="button"
+            data-copy
+            class="border border-signature px-4 py-2 text-[13px] font-medium uppercase tracking-[0.16em] text-signature transition-colors hover:bg-signature hover:text-white disabled:cursor-not-allowed disabled:border-stone disabled:text-muted disabled:hover:bg-transparent"
+          >
+            Copy names
+          </button>
+          <button
+            type="button"
+            data-clear
+            data-armed="false"
+            class="px-4 py-2 text-[13px] font-medium uppercase tracking-[0.16em] text-muted transition-colors hover:text-signature disabled:cursor-not-allowed disabled:hover:text-muted"
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main class="mx-auto max-w-[1680px] px-6 py-10 sm:px-10 lg:px-14 lg:py-14">
+      <p data-empty hidden class="border border-stone bg-white px-6 py-10 text-center text-base text-charcoal">
+        No portraits selected yet.
+      </p>
+
+      <div
+        id="gallery"
+        class="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 xl:grid-cols-3 min-[1680px]:grid-cols-4"
+      >
+        <article data-file="Kathryn-10-20-2026-010.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-010.jpg">
+            <img src="images/Kathryn-10-20-2026-010.jpg" alt="Headshot of Kathryn, smiling, in a houndstooth blazer" width="864" height="1080" class="block h-auto w-full" />
+          </button>
+          <label for="pick-010" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-010" data-select type="checkbox" value="Kathryn-10-20-2026-010.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-010.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-011.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-011.jpg">
+            <img src="images/Kathryn-10-20-2026-011.jpg" alt="Headshot of Kathryn" width="864" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-011" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-011" data-select type="checkbox" value="Kathryn-10-20-2026-011.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-011.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-012.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-012.jpg">
+            <img src="images/Kathryn-10-20-2026-012.jpg" alt="Headshot of Kathryn" width="864" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-012" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-012" data-select type="checkbox" value="Kathryn-10-20-2026-012.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-012.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-013-Edit.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-013-Edit.jpg">
+            <img src="images/Kathryn-10-20-2026-013-Edit.jpg" alt="Edited headshot of Kathryn" width="864" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-013-edit" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-013-edit" data-select type="checkbox" value="Kathryn-10-20-2026-013-Edit.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-013-Edit.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-017-Edit.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-017-Edit.jpg">
+            <img src="images/Kathryn-10-20-2026-017-Edit.jpg" alt="Edited headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-017-edit" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-017-edit" data-select type="checkbox" value="Kathryn-10-20-2026-017-Edit.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-017-Edit.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-018.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-018.jpg">
+            <img src="images/Kathryn-10-20-2026-018.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-018" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-018" data-select type="checkbox" value="Kathryn-10-20-2026-018.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-018.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-019.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-019.jpg">
+            <img src="images/Kathryn-10-20-2026-019.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-019" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-019" data-select type="checkbox" value="Kathryn-10-20-2026-019.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-019.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-020.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-020.jpg">
+            <img src="images/Kathryn-10-20-2026-020.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-020" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-020" data-select type="checkbox" value="Kathryn-10-20-2026-020.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-020.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-022.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-022.jpg">
+            <img src="images/Kathryn-10-20-2026-022.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-022" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-022" data-select type="checkbox" value="Kathryn-10-20-2026-022.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-022.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-024.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-024.jpg">
+            <img src="images/Kathryn-10-20-2026-024.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-024" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-024" data-select type="checkbox" value="Kathryn-10-20-2026-024.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-024.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-026.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-026.jpg">
+            <img src="images/Kathryn-10-20-2026-026.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-026" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-026" data-select type="checkbox" value="Kathryn-10-20-2026-026.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-026.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-034.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in bg-stone/40 focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-034.jpg">
+            <img src="images/Kathryn-10-20-2026-034.jpg" alt="Three-quarter portrait of Kathryn with arms crossed, in a houndstooth blazer" width="1080" height="719" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-034" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-034" data-select type="checkbox" value="Kathryn-10-20-2026-034.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-034.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-036.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-036.jpg">
+            <img src="images/Kathryn-10-20-2026-036.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-036" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-036" data-select type="checkbox" value="Kathryn-10-20-2026-036.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-036.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-037.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-037.jpg">
+            <img src="images/Kathryn-10-20-2026-037.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-037" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-037" data-select type="checkbox" value="Kathryn-10-20-2026-037.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-037.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-039.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-039.jpg">
+            <img src="images/Kathryn-10-20-2026-039.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-039" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-039" data-select type="checkbox" value="Kathryn-10-20-2026-039.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-039.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-040.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-040.jpg">
+            <img src="images/Kathryn-10-20-2026-040.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-040" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-040" data-select type="checkbox" value="Kathryn-10-20-2026-040.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-040.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-044.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-044.jpg">
+            <img src="images/Kathryn-10-20-2026-044.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-044" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-044" data-select type="checkbox" value="Kathryn-10-20-2026-044.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-044.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-045.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-045.jpg">
+            <img src="images/Kathryn-10-20-2026-045.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-045" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-045" data-select type="checkbox" value="Kathryn-10-20-2026-045.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-045.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-046.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-046.jpg">
+            <img src="images/Kathryn-10-20-2026-046.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-046" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-046" data-select type="checkbox" value="Kathryn-10-20-2026-046.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-046.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-052.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-052.jpg">
+            <img src="images/Kathryn-10-20-2026-052.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-052" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-052" data-select type="checkbox" value="Kathryn-10-20-2026-052.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-052.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-054.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-054.jpg">
+            <img src="images/Kathryn-10-20-2026-054.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-054" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-054" data-select type="checkbox" value="Kathryn-10-20-2026-054.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-054.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-055.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-055.jpg">
+            <img src="images/Kathryn-10-20-2026-055.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-055" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-055" data-select type="checkbox" value="Kathryn-10-20-2026-055.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-055.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-057-Edit.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-057-Edit.jpg">
+            <img src="images/Kathryn-10-20-2026-057-Edit.jpg" alt="Edited headshot of Kathryn in a black blazer, arms crossed" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-057-edit" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-057-edit" data-select type="checkbox" value="Kathryn-10-20-2026-057-Edit.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-057-Edit.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-059.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-059.jpg">
+            <img src="images/Kathryn-10-20-2026-059.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-059" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-059" data-select type="checkbox" value="Kathryn-10-20-2026-059.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-059.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-060.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-060.jpg">
+            <img src="images/Kathryn-10-20-2026-060.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-060" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-060" data-select type="checkbox" value="Kathryn-10-20-2026-060.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-060.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-061.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-061.jpg">
+            <img src="images/Kathryn-10-20-2026-061.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-061" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-061" data-select type="checkbox" value="Kathryn-10-20-2026-061.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-061.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-062.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-062.jpg">
+            <img src="images/Kathryn-10-20-2026-062.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-062" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-062" data-select type="checkbox" value="Kathryn-10-20-2026-062.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-062.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-066.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-066.jpg">
+            <img src="images/Kathryn-10-20-2026-066.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-066" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-066" data-select type="checkbox" value="Kathryn-10-20-2026-066.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-066.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-069.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-069.jpg">
+            <img src="images/Kathryn-10-20-2026-069.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-069" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-069" data-select type="checkbox" value="Kathryn-10-20-2026-069.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-069.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-073.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-073.jpg">
+            <img src="images/Kathryn-10-20-2026-073.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-073" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-073" data-select type="checkbox" value="Kathryn-10-20-2026-073.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-073.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-073-Edit.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-073-Edit.jpg">
+            <img src="images/Kathryn-10-20-2026-073-Edit.jpg" alt="Edited headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-073-edit" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-073-edit" data-select type="checkbox" value="Kathryn-10-20-2026-073-Edit.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-073-Edit.jpg</span>
+          </label>
+        </article>
+
+        <article data-file="Kathryn-10-20-2026-074.jpg" class="flex flex-col border border-stone bg-white has-[:checked]:border-signature has-[:checked]:outline has-[:checked]:outline-1 has-[:checked]:outline-signature">
+          <button type="button" data-open class="block cursor-zoom-in focus-visible:outline focus-visible:outline-signature" aria-label="Open Kathryn-10-20-2026-074.jpg">
+            <img src="images/Kathryn-10-20-2026-074.jpg" alt="Headshot of Kathryn" width="719" height="1080" loading="lazy" class="block h-auto w-full" />
+          </button>
+          <label for="pick-074" class="flex cursor-pointer items-center gap-3 border-t border-stone px-4 py-4 has-[:checked]:border-signature">
+            <input id="pick-074" data-select type="checkbox" value="Kathryn-10-20-2026-074.jpg" class="size-[22px] shrink-0 accent-signature" />
+            <span class="text-base font-medium leading-snug text-charcoal">Kathryn-10-20-2026-074.jpg</span>
+          </label>
+        </article>
+      </div>
+    </main>
+
+    <footer class="border-t border-stone">
+      <div class="mx-auto flex max-w-[1680px] flex-col gap-2 px-6 py-8 text-[12px] font-medium uppercase tracking-[0.18em] text-muted sm:flex-row sm:items-center sm:justify-between sm:px-10 lg:px-14">
+        <p>Harry Martin Photography</p>
+        <p>October 21, 2026</p>
+      </div>
+    </footer>
+
+    <dialog
+      id="viewer"
+      class="m-auto w-[min(980px,calc(100vw-2rem))] max-h-[calc(100vh-2rem)] border border-stone bg-ivory p-0 text-charcoal backdrop:bg-signature/80"
+    >
+      <div class="flex items-center justify-between gap-4 border-b border-stone px-4 py-3">
+        <div class="flex gap-2">
+          <button type="button" data-prev class="border border-stone px-3 py-1.5 text-[12px] font-medium uppercase tracking-[0.16em] text-signature hover:border-signature">
+            Previous
+          </button>
+          <button type="button" data-next class="border border-stone px-3 py-1.5 text-[12px] font-medium uppercase tracking-[0.16em] text-signature hover:border-signature">
+            Next
+          </button>
+        </div>
+        <button type="button" data-close class="px-3 py-1.5 text-[12px] font-medium uppercase tracking-[0.16em] text-muted hover:text-signature">
+          Close
+        </button>
+      </div>
+      <img id="viewer-image" alt="" class="mx-auto block max-h-[calc(100vh-11rem)] w-auto max-w-full bg-charcoal/10" />
+      <label class="flex cursor-pointer items-center gap-3 border-t border-stone bg-white px-4 py-4">
+        <input id="viewer-check" type="checkbox" class="size-[22px] shrink-0 accent-signature" />
+        <span id="viewer-name" class="text-base font-medium leading-snug text-charcoal"></span>
+      </label>
+    </dialog>
+
+    <script src="gallery.js"></script>
+  </body>
+</html>
